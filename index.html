@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="main_contianer">
+      <header>
+        <h3>VENIA</h3>
+        <nav>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Women</a></li>
+            <li><a>Men</a></li>
+            <li><a>Smart gear</a></li>
+            <li><a>Accssories</a></li>
+          </ul>
+        </nav>
+        <p>Cart</p>
+      </header>
+      <div class="category">
+        <section class="category_title">
+          <h2>Mens <br>
+            Outwear's
+          </h2>
+          <div class="category_title_border"></div>
+        </section>
+        <section class="category_image">
+        </section>
+      </div>
+      <div class="products">
+        <section class="filter_section">
+          <h4 class="filter_title">Filters</h4>
+          <h5>Category</h5>
+          <div class="filter_list">
+            <div>
+              <input type="checkbox" id="jewellery" name="jewellery" value="jewelery"  onchange="handleCheckboxChange(this)">
+              <label for="jewellery">Jewellery</label>
+            </div>
+            <div>
+              <input type="checkbox" id="electronics" name="electronics" value="electronics"  onchange="handleCheckboxChange(this)">
+              <label for="electronics">Electronics</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mensClothing" name="mensClothing" value="men's clothing"  onchange="handleCheckboxChange(this)">
+              <label for="mensClothing">Men's Clothing</label>
+            </div>
+            <div>
+              <input type="checkbox" id="womensClothing" name="womensClothing" value="women's clothing"  onchange="handleCheckboxChange(this)">
+              <label for="womensClothing">Women's Clothing</label>
+            </div>
+          </div>
+        </section>
+        <section class="products_listing">
+          <div class="sort_products">
+            <p id="totallineitem"></p>
+            <div>
+              <select id="sortbytype" onchange="handleSortChange(this)">
+                <option value="price">Sort by price</option>
+                <option value="rating">Sort by rating</option> 
+              </select>
+            </div>
+          </div>
+          <div class="loader" id="loader"></div>
+          <div class="product_lineitems" id="productList">
+            
+          </div>
+        </section>
+
+      </div>
+      <div class="footer">
+        <section>
+          <h4>Account</h4>
+          <a>Sign in</a>
+          <a>Register</a>
+          <a>Order status</a>
+        </section>
+        <section>
+          <h4>About us</h4>
+          <a>Our story</a>
+          <a>Careers</a>
+        </section>
+        <section>
+          <h4>Help</h4>
+          <a>Contact us</a>
+          <a>Order status</a>
+          <a>Returns</a>
+        </section>
+        <section>
+          <h4>Follow us</h4>
+          <p>Lorem ipsum lorem ipsum</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

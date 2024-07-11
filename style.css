@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+}
+html, body, .main_contianer{
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #1363DF;
+  color: #fff;
+}
+header h3{
+  letter-spacing: 2px;
+}
+header ul{
+  width: 500px;
+}
+header ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.category{
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+.category .category_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  background-color: #000;
+  color: #ffffff;
+}
+.category_title_border{
+  border-bottom: 5px solid #1363DF;
+  width: 10%;
+}
+.category_image{
+  width: 75%;
+  background-image: url('./assets/mensoutwear.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.products{
+  display: flex;
+}
+.products .filter_section{
+  width: 25%;
+  padding-left:150px;
+}
+.products .products_listing{
+  width: 75%;
+  padding: 20px 230px 20px 20px;
+}
+.filter_title{
+  border-bottom: 2px solid #D1D3D6;
+  padding-bottom: 10px;
+}
+.products .filter_section .filter_list div{
+  margin-bottom: 5px;
+}
+.products .products_listing .sort_products{
+  display: flex;
+  justify-content: space-between;
+}
+.product_lineitems{
+  display: flex;
+  flex-wrap: wrap;
+}
+.lineitem{
+  width:32%;
+  padding: 10px;
+  border: 2px solid #F3F3F3;
+  margin:5px;
+}
+.lineitem .productTitle{
+  white-space: nowrap; 
+  width: 97%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-weight: 600;
+}
+.lineitem .productTitle:hover{
+  white-space: normal;
+}
+.productImage{
+  height: 250px;
+}
+.productImage img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+#sortbytype{
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #f3f3f3;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  border-top: 3px solid #f3f3f3;
+  margin-top: 30px;
+}
+.footer section{
+  display: flex;
+  flex-direction: column;
+}
+.footer section a{
+  padding:6px
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
